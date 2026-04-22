@@ -26,12 +26,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fatedier/frp/client/proxy"
-	"github.com/fatedier/frp/pkg/config"
-	"github.com/fatedier/frp/pkg/config/v1/validation"
-	httppkg "github.com/fatedier/frp/pkg/util/http"
-	"github.com/fatedier/frp/pkg/util/log"
-	netpkg "github.com/fatedier/frp/pkg/util/net"
+	"github.com/JaegerFong/frp/client/proxy"
+	"github.com/JaegerFong/frp/pkg/config"
+	"github.com/JaegerFong/frp/pkg/config/v1/validation"
+	httppkg "github.com/JaegerFong/frp/pkg/util/http"
+	"github.com/JaegerFong/frp/pkg/util/log"
+	netpkg "github.com/JaegerFong/frp/pkg/util/net"
 )
 
 type GeneralResponse struct {

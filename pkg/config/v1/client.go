@@ -21,7 +21,7 @@ import (
 
 	"github.com/samber/lo"
 
-	"github.com/fatedier/frp/pkg/util/util"
+	"github.com/JaegerFong/frp/pkg/util/util"
 )
 
 type ClientConfig struct {

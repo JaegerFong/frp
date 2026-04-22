@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fatedier/frp/pkg/util/log"
-	"github.com/fatedier/frp/pkg/util/metric"
-	server "github.com/fatedier/frp/server/metrics"
+	"github.com/JaegerFong/frp/pkg/util/log"
+	"github.com/JaegerFong/frp/pkg/util/metric"
+	server "github.com/JaegerFong/frp/server/metrics"
 )
 
 var (

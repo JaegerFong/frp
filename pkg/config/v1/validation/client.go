@@ -22,8 +22,8 @@ import (
 
 	"github.com/samber/lo"
 
-	v1 "github.com/fatedier/frp/pkg/config/v1"
-	"github.com/fatedier/frp/pkg/featuregate"
+	v1 "github.com/JaegerFong/frp/pkg/config/v1"
+	"github.com/JaegerFong/frp/pkg/featuregate"
 )
 
 func ValidateClientCommonConfig(c *v1.ClientCommonConfig) (Warning, error) {

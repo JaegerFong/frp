@@ -20,16 +20,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fatedier/frp/client/proxy"
-	"github.com/fatedier/frp/client/visitor"
-	"github.com/fatedier/frp/pkg/auth"
-	v1 "github.com/fatedier/frp/pkg/config/v1"
-	"github.com/fatedier/frp/pkg/msg"
-	"github.com/fatedier/frp/pkg/transport"
-	netpkg "github.com/fatedier/frp/pkg/util/net"
-	"github.com/fatedier/frp/pkg/util/wait"
-	"github.com/fatedier/frp/pkg/util/xlog"
-	"github.com/fatedier/frp/pkg/vnet"
+	"github.com/JaegerFong/frp/client/proxy"
+	"github.com/JaegerFong/frp/client/visitor"
+	"github.com/JaegerFong/frp/pkg/auth"
+	v1 "github.com/JaegerFong/frp/pkg/config/v1"
+	"github.com/JaegerFong/frp/pkg/msg"
+	"github.com/JaegerFong/frp/pkg/transport"
+	netpkg "github.com/JaegerFong/frp/pkg/util/net"
+	"github.com/JaegerFong/frp/pkg/util/wait"
+	"github.com/JaegerFong/frp/pkg/util/xlog"
+	"github.com/JaegerFong/frp/pkg/vnet"
 )
 
 type SessionContext struct {

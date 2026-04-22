@@ -23,8 +23,8 @@ import (
 
 	"github.com/gorilla/mux"
 
-	v1 "github.com/fatedier/frp/pkg/config/v1"
-	netpkg "github.com/fatedier/frp/pkg/util/net"
+	v1 "github.com/JaegerFong/frp/pkg/config/v1"
+	netpkg "github.com/JaegerFong/frp/pkg/util/net"
 )
 
 func init() {

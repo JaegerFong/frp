@@ -28,9 +28,9 @@ import (
 	"golang.org/x/net/ipv4"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/fatedier/frp/pkg/msg"
-	"github.com/fatedier/frp/pkg/transport"
-	"github.com/fatedier/frp/pkg/util/xlog"
+	"github.com/JaegerFong/frp/pkg/msg"
+	"github.com/JaegerFong/frp/pkg/transport"
+	"github.com/JaegerFong/frp/pkg/util/xlog"
 )
 
 var (
