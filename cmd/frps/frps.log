@@ -1,0 +1,9 @@
+2025-09-11 14:25:14.318 [I] [frps/root.go:105] frps uses config file: ./frps.toml
+2025-09-11 14:25:14.433 [I] [server/service.go:193] plugin [user-manager] has been registered
+2025-09-11 14:25:14.433 [I] [server/service.go:193] plugin [port-manager] has been registered
+2025-09-11 14:25:14.434 [I] [server/service.go:237] frps tcp listen on 0.0.0.0:7000
+2025-09-11 14:25:14.434 [I] [server/service.go:246] frps kcp listen on udp 0.0.0.0:7000
+2025-09-11 14:25:14.434 [I] [server/service.go:305] http service listen on 0.0.0.0:80
+2025-09-11 14:25:14.434 [I] [server/service.go:319] https service listen on 0.0.0.0:443
+2025-09-11 14:25:14.434 [I] [frps/root.go:114] frps started successfully
+2025-09-11 14:25:14.434 [I] [server/service.go:351] dashboard listen on 127.0.0.1:7500

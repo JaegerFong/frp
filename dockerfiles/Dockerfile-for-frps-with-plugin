@@ -1,0 +1,38 @@
+# frps + frps-plugin 镜像
+FROM alpine:3
+
+# 安装必要的运行时依赖
+RUN apk add --no-cache ca-certificates tzdata
+
+# 复制预编译的二进制文件
+COPY frps /usr/bin/frps
+COPY frps-plugin /usr/bin/frps-plugin
+
+# 创建配置目录
+RUN mkdir -p /etc/frp /etc/config
+
+# 暴露端口 (frps 默认端口 + plugin HTTP 端口)
+EXPOSE 7000 7500 8888
+
+# 启动脚本 - 同时运行 frps 和 frps-plugin
+COPY <<EOF /docker-entrypoint.sh
+#!/bin/sh
+set -e
+
+FRPS_CONFIG=\${FRPS_CONFIG:-"/etc/frp/frps.toml"}
+PLUGIN_CONFIG=\${PLUGIN_CONFIG:-"/etc/config/cloud.yaml"}
+FEATURE_CONFIG=\${FEATURE_CONFIG:-"/etc/config/feature.yaml"}
+
+echo "Starting frps..."
+/usr/bin/frps -c "\$FRPS_CONFIG" &
+
+echo "Starting frps-plugin..."
+/usr/bin/frps-plugin -c "\$PLUGIN_CONFIG" -f "\$FEATURE_CONFIG" &
+
+
+wait
+EOF
+
+RUN chmod +x /docker-entrypoint.sh
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
